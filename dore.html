@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دوره</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="dore.css">
+  <link rel="icon" type="image/x-icon" href="Untitled.png">
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(196, 192, 192);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: green;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="arezoo.html"><i class="fa-solid fa-house"></i> صفحه اصلی</a>
+    <a href="support.html"><i class="fa-solid fa-circle-question"></i> پشتیبانی</a>
+    <a href="buy dore.html"><i class="fa-solid fa-cart-shopping"></i> خرید دوره</a>
+    <a href="dore.html"><i class="fa-solid fa-photo-film"></i>  دوره</a>
+  </div>
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+  <center><h1 class="a">ArezooENG</h1></center>
+  <center>
+    <div id="t">
+      <h1 id="text">برای دیدن فیلم تدریس پسورد<i class="fa-solid fa-key"></i> را در کادر زیر وارد کرده و تایید را بزنید.</h1>
+      <form action="v.html">
+        <input type="password" name="p" pattern="768" >
+      <input type="submit" value="تایید">
+      </form>
+      
+    </div>  
+  </center>
+
+</body>
+</html>
